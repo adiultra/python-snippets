@@ -5,3 +5,9 @@
     def ${1:fname}(${2:arg}):
         ${3:pass}
     '''
+  'Initiator Function':
+    'prefix': 'defi'
+    'body': '''
+    def __init__(self, ${1:arg}):
+        ${2:pass}
+    '''
