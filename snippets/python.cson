@@ -1,0 +1,7 @@
+'.source.python':
+  'Function Definition':
+    'prefix': 'def'
+    'body': '''
+    def ${1:fname}(${2:arg}):
+        ${3:pass}
+    '''

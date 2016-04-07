@@ -1,0 +1,15 @@
+{
+  "name": "python-snippets",
+  "version": "0.0.0",
+  "description": "Python Snippets for Atom",
+  "keywords": [
+    "python",
+    "tkinter",
+    "snippets"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/adiultra/python-snippets",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
