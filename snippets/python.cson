@@ -11,3 +11,6 @@
     def __init__(self, ${1:arg}):
         ${2:pass}
     '''
+  'Print Function':
+    'prefix': 'print'
+    'body': 'print($1)'
