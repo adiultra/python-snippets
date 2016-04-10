@@ -19,7 +19,15 @@
     'prefix': 'print'
     'body': 'print($1)$2'
 
-    # Tk functions
+    # Tkinter snippets
+
+  'Import Tkinter':
+    'prefix': 'imtk'
+    'body': 'import tkinter as tk$1'
+
+  'Root Configuration':
+    'prefix': 'config'
+    'body': 'config(menu=$1)$2'
 
   'Button':
     'prefix': 'button'
@@ -60,3 +68,23 @@
   'Side':
     'prefix': 'side'
     'body': 'side=tk.$1'
+
+  'Bind':
+    'prefix': 'bind'
+    'body': 'bind("<Button-${1:1}>", ${2:fxn})$3'
+
+  'Menu':
+    'prefix': 'menu'
+    'body': 'tk.menu(${1:root})$2'
+
+  'Add Cascade':
+    'prefix': 'add cascade'
+    'body': 'add_cascade(label="$1", menu=$2)$3'
+
+  'Add Command':
+    'prefix': 'add command'
+    'body': 'add_command(label="$1", command=$2)$3'
+
+  'Add Seperator':
+    'prefix': 'add seperator'
+    'body': 'add_separator()$1'
