@@ -31,7 +31,7 @@
     'prefix': 'frame'
     'body': 'tk.Frame(${1:root})'
 
-  'Frame':
+  'Entry':
     'prefix': 'entry'
     'body': 'tk.Entry(${1:root})'
 
