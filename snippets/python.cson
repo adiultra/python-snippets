@@ -1,4 +1,6 @@
 '.source.python':
+    #  Normal missing Functionality
+
   'Function Definition':
     'prefix': 'def'
     'body': '''
@@ -14,3 +16,37 @@
   'Print Function':
     'prefix': 'print'
     'body': 'print($1)'
+
+    # Tk functions
+
+  'Button':
+    'prefix': 'button'
+    'body': 'tk.Button(${1:root}, text="$2")'
+
+  'Label':
+    'prefix': 'label'
+    'body': 'tk.Label(${1:root}, text="$2")'
+
+  'Frame':
+    'prefix': 'frame'
+    'body': 'tk.Frame(${1:root})'
+
+  'Frame':
+    'prefix': 'entry'
+    'body': 'tk.Entry(${1:root})'
+
+  'Grid':
+    'prefix': 'grid'
+    'body': 'grid(row=$1, colomn=$2)'
+
+  'Sticky':
+    'prefix': 'sticky'
+    'body': 'sticky=tk.$1'
+
+  'Check Button':
+    'prefix': 'checkbutton'
+    'body': 'tk.Checkbutton(${1:root}, text="$2")'
+
+  'Main Loop':
+    'prefix': 'mainloop'
+    'body': 'mainloop()'
