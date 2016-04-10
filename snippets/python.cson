@@ -6,38 +6,40 @@
     'body': '''
     def ${1:fname}(${2:arg}):
         ${3:pass}
+`   $4
     '''
   'Initiator Function':
     'prefix': 'defi'
     'body': '''
     def __init__(self, ${1:arg}):
         ${2:pass}
+    $3
     '''
   'Print Function':
     'prefix': 'print'
-    'body': 'print($1)'
+    'body': 'print($1)$2'
 
     # Tk functions
 
   'Button':
     'prefix': 'button'
-    'body': 'tk.Button(${1:root}, text="$2")'
+    'body': 'tk.Button(${1:root}, text="$2")$3'
 
   'Label':
     'prefix': 'label'
-    'body': 'tk.Label(${1:root}, text="$2")'
+    'body': 'tk.Label(${1:root}, text="$2")$3'
 
   'Frame':
     'prefix': 'frame'
-    'body': 'tk.Frame(${1:root})'
+    'body': 'tk.Frame(${1:root})$2'
 
   'Entry':
     'prefix': 'entry'
-    'body': 'tk.Entry(${1:root})'
+    'body': 'tk.Entry(${1:root})$2'
 
   'Grid':
     'prefix': 'grid'
-    'body': 'grid(row=$1, colomn=$2)'
+    'body': 'grid(row=$1, colomn=$2)$3'
 
   'Sticky':
     'prefix': 'sticky'
@@ -45,8 +47,16 @@
 
   'Check Button':
     'prefix': 'checkbutton'
-    'body': 'tk.Checkbutton(${1:root}, text="$2")'
+    'body': 'tk.Checkbutton(${1:root}, text="$2")$3'
 
   'Main Loop':
     'prefix': 'mainloop'
-    'body': 'mainloop()'
+    'body': 'mainloop()$1'
+
+  'Pack':
+    'prefix': 'pack'
+    'body': 'pack($1)$2'
+
+  'Side':
+    'prefix': 'side'
+    'body': 'side=tk.$1'
